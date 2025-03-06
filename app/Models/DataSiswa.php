@@ -66,4 +66,21 @@ class DataSiswa extends Model
     {
         return $this->belongsTo(users::class);
     }
+
+    public function DataWali()
+    {
+        return $this->hasOne(Datawali::class);
+    }
+
+    public function DataIbu()
+    {
+        return $this->hasOne(DataIbu::class);
+    }
+
+    public function DataAyah()
+    {
+        return $this->hasOne(DataAyah::class);
+    }
+
+
 }

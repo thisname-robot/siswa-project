@@ -32,6 +32,16 @@ class users extends Model
 
     public function DataSiswa()
     {
-        return $this->hasOne(DataSiswa::class);
+        return $this->hasMany(DataSiswa::class);
+    }
+
+    public function PointTatib()
+    {
+        return $this->hasMany(PointTatib::class);
+    }
+
+    public function PartisipasiEkstra()
+    {
+        return $this->hasMany(PartisipasiEkstra::class);
     }
 }

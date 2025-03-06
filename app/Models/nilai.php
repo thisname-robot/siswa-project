@@ -19,6 +19,6 @@ class nilai extends Model
     public function siswa()
     {
         return $this->belongsTo(DataSiswa::class);
-        return $this->belongsTo(Matpel::class);
+        return $this->hasOne(Matpel::class);
     }
 }

@@ -21,6 +21,6 @@ class PartisipasiEkstra extends Model
 
     public function ekstra()
     {
-        return $this->belongsTo(ekstra::class);
+        return $this->hasOne(ekstra::class);
     }
 }

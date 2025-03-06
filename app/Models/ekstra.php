@@ -13,4 +13,9 @@ class ekstra extends Model
         'jadwal',
         'pengajar'
     ];
+
+    public function PartisipasiEkstra()
+    {
+        return $this->belongsTo(PartisipasiEkstra::class);
+    }
 }
